@@ -25,7 +25,8 @@ class Contenedor {
     async getAll() {
         try {   
                 if (this.content.length !== 0) {
-                          return this.content;
+                        const contenido = await fs.promises.readFile(this.fileName,JSON.stringify(this.content), "utf-8");  
+                        return contenido;
                     } else {
                           throw new Error(`el archivo ${this.fileName} esta vacio ⭕`);
                     }
