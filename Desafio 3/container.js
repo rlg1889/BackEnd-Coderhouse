@@ -24,9 +24,9 @@ class Contenedor {
     //Función que devuelve todos los objetos del archivo.
     async getAll() {
         try {   
-                if (this.content.length !== 0) {
-                        const contenido = await fs.promises.readFile(this.fileName,JSON.stringify(this.content), "utf-8");  
-                        return contenido;
+            const contenido = await fs.readFileSync(this.fileName,"utf-8");  
+                if (contenido !== 0) {
+                        return JSON.parse(contenido);
                     } else {
                           throw new Error(`el archivo ${this.fileName} esta vacio ⭕`);
                     }

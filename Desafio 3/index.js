@@ -1,6 +1,6 @@
 const Contenedor = require("./container")
 const express = require("express");
-const productos = new Contenedor("./productos.txt");
+const productos = new Contenedor("productos.txt");
 
 // Se inicializa el servidor
 const app = express();
