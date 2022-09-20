@@ -2,7 +2,7 @@ const fs = require('fs')
 
 class Contenedor {
     constructor(name) {
-        this.fileName = name
+        this.fileName = "./"+name
         this.countID = 0
         this.content = []
     }
