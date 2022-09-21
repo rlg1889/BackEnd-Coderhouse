@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Coderhouse Desafio 4 - Rodrigo Gimenez</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Desafio 4 Coder House</h1>
+    <div class="container">
+      <h2>Formulario para agregar Productos por POST</h2>
+      <form action="http://localhost:3000/api/productos" method="post">
+        <div class="container">
+          <label for="title">Nombre del Producto</label>
+          <input type="text" name="title" placeholder="Ingrese el nombre del producto " required>
+        </div>
+        <div class="container">
+          <label for="price">Precio del Producto</label>
+          <input type="number" name="price" placeholder="Ingrese el precio del producto" required>
+        </div>
+        <div class="container">
+          <label for="thumbnail">Imagen del Producto</label>
+          <input type="text" name="thumbnail" placeholder="Ingrese el  Link de la imagen del producto" required>
+        </div>
+        <div class="container">
+          <input type="submit" value="Guardar">
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
